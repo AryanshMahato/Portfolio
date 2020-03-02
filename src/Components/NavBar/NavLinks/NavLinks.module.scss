@@ -3,7 +3,13 @@
 .navLinks {
   display: flex;
   align-items: center;
-  height: 80px;
+  flex-flow: column;
+  justify-content: space-evenly;
+  height: 100%;
+  list-style-type: none;
+  @include desktop-view {
+    flex-flow: row;
+  }
 }
 
 .navLink {

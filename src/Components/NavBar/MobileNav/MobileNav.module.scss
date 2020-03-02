@@ -1,0 +1,21 @@
+@import "src/Global/SASS/variables";
+
+.mobileNav {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  @include desktop-view {
+    display: none;
+  }
+}
+
+.hamburger {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 1.5rem;
+  svg {
+    fill: colors(white);
+    height: 100%;
+    width: 100%;
+  }
+}

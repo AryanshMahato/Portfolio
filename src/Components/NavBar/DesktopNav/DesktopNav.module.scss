@@ -1,8 +1,14 @@
+@import "src/Global/SASS/variables";
+
 .desktopNav {
+  display: none;
   list-style: none;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 5rem;
   padding: 0 2rem;
+
+  @include desktop-view {
+    display: flex;
+  }
 }

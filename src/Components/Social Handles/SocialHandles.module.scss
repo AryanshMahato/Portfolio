@@ -10,10 +10,6 @@
   @include desktop-view {
     flex-flow: row;
   }
-
-  @include tab-view {
-    flex-flow: row;
-  }
 }
 
 .socialHandle {
@@ -39,7 +35,7 @@
     color: colors(light);
   }
 
-  @include tab-view {
+  @include desktop-view {
     margin: 0 0.5rem;
   }
 }

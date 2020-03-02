@@ -7,9 +7,10 @@ import {
 } from "react-icons/fa";
 
 import styles from "./SocialHandles.module.scss";
+import { SocialHandle } from "../../Utils/Interface";
 
 const SocialHandles = () => {
-  const handleList: Array<any> = [
+  const handleList: Array<SocialHandle> = [
     {
       name: "Github",
       logo: <FaGithubSquare />,
@@ -33,10 +34,10 @@ const SocialHandles = () => {
   ];
 
   const showHandle = () => {
-    return handleList.map(listItem => (
-      <li className={styles.socialHandle} key={listItem.link}>
-        <a href={listItem.link} target={"_blank"} rel="noopener noreferrer">
-          {listItem.logo}
+    return handleList.map(properties => (
+      <li className={styles.socialHandle} key={properties.link}>
+        <a href={properties.link} target={"_blank"} rel="noopener noreferrer">
+          {properties.logo}
         </a>
       </li>
     ));

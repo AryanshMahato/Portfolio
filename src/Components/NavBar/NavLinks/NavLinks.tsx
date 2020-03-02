@@ -20,7 +20,7 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
         );
       }
       return (
-        <li className={styles.navLink + " " + styles.cta} key={NavItem.name}>
+        <li className={  styles.cta} key={NavItem.name}>
           {NavItem.name}
         </li>
       );

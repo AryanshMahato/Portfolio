@@ -4,7 +4,8 @@
   display: flex;
   list-style: none;
   flex-flow: column;
-  height: 2rem;
+  height: 100%;
+  align-items: center;
 
   @include desktop-view {
     flex-flow: row;

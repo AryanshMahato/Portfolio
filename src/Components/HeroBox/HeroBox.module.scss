@@ -1,0 +1,36 @@
+@import "src/Global/SASS/variables";
+
+.herBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  font-family: "Open Sans", "sans-serif";
+  font-weight: bold;
+  color: colors(white);
+}
+
+.title {
+  font-size: 4rem;
+  span {
+    background-image: -webkit-linear-gradient(180deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: nameColor 5s infinite linear;
+  }
+}
+
+.description {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+@keyframes nameColor {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

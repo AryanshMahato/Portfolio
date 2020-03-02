@@ -1,0 +1,34 @@
+@import "src/Global/SASS/variables";
+
+.navLinks {
+  display: flex;
+}
+
+.navLink {
+  color: colors(grey);
+  cursor: pointer;
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  position: relative;
+
+  &:hover {
+    color: colors(light);
+    &:after {
+      width: 110%;
+      color: colors(light);
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background: colors(grey);
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+    transition: 0.2s;
+  }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import SocialHandles from "./Components/Social Handles/SocialHandles";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
     <>
-      <SocialHandles />
+      <NavBar />
     </>
   );
 }

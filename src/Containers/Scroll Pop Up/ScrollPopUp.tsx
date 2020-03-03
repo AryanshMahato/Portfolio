@@ -7,9 +7,7 @@ const ScrollPopUp = () => {
   return (
     <div className={styles.scrollPopUp}>
       Scroll{" "}
-      <i>
         <FaChevronDown />
-      </i>
     </div>
   );
 };

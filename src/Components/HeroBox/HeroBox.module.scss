@@ -3,17 +3,26 @@
 .herBox {
   display: flex;
   flex-flow: column;
-  align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 90vh;
+  margin-left: 1rem;
   font-family: "Open Sans", "sans-serif";
   font-weight: bold;
   color: colors(white);
+  @include tab-view {
+    align-items: center;
+  }
+  @include desktop-view {
+    height: 60vh;
+    margin-left: 0;
+    align-items: center;
+  }
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   span {
+    display: block;
     background-image: -webkit-linear-gradient(
       -60deg,
       #bb2cd9,
@@ -29,11 +38,26 @@
     background-size: 1000%;
     -webkit-animation: nameColor 10s infinite;
   }
+  @include tab-view {
+    font-size: 3rem;
+    span {
+      display: inline;
+    }
+  }
+  @include desktop-view {
+    font-size: 4.4rem;
+  }
 }
 
 .description {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 3rem;
+  @include tab-view {
+    font-size: 2.5rem;
+  }
+  @include desktop-view {
+    font-size: 3.5rem;
+  }
 }
 
 @keyframes nameColor {

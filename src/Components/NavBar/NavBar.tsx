@@ -9,8 +9,6 @@ import MobileNavLinks from "./MobileNav/MobileNavLinks/MobileNavLinks";
 const NavBar = () => {
   const [showMobileNav, setMobileNav] = useState(false);
 
-  console.log(showMobileNav);
-
   return (
     <div className={styles.NavBar}>
       <DesktopNav />

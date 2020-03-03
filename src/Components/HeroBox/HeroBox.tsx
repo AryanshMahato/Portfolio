@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HeroBox.module.scss";
+import ScrollPopUp from "../../Containers/Scroll Pop Up/ScrollPopUp";
 
 const HeroBox = () => {
   return (
@@ -8,6 +9,7 @@ const HeroBox = () => {
         Hello, I am <span>Aryansh Mahato</span>
       </div>
       <div className={styles.description}>Front End Web Developer</div>
+      <ScrollPopUp />
     </div>
   );
 };

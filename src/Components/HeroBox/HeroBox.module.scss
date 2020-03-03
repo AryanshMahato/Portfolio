@@ -1,5 +1,13 @@
 @import "src/Global/SASS/variables";
 
+.herBoxContainer {
+  height: 100vh;
+  @include desktop-view {
+    // Subtracts NavBar height to get full Viewport Height
+    height: calc(100vh - 80px);
+  }
+}
+
 .herBox {
   display: flex;
   flex-flow: column;

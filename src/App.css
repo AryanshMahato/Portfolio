@@ -4,3 +4,9 @@ body {
   background: #616c6f;
   overflow-x: hidden;
 }
+
+.test{
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}

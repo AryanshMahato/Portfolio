@@ -3,11 +3,17 @@ import { FaChevronDown } from "react-icons/fa";
 
 import styles from "./ScrollPopUp.module.scss";
 
-const ScrollPopUp = () => {
+interface ScrollPopUpProps {
+  didScrolled: boolean;
+}
+
+const ScrollPopUp = ({ didScrolled }: ScrollPopUpProps) => {
+  if (didScrolled) {
+    return null;
+  }
   return (
     <div className={styles.scrollPopUp}>
-      Scroll{" "}
-        <FaChevronDown />
+      Scroll <FaChevronDown />
     </div>
   );
 };

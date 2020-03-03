@@ -8,6 +8,7 @@ function App() {
     <>
       <NavBar />
       <HeroBox />
+      <div className={"test"}></div>
     </>
   );
 }

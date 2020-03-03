@@ -2,8 +2,12 @@ import React from "react";
 
 import styles from "./NavLinks.module.scss";
 
-import { NavItems } from "../../../Utils/Interface";
 import { NavItemType } from "../../../Utils/enums";
+
+interface NavItems {
+  name: string;
+  type: NavItemType;
+}
 
 interface NavLinksProps {
   NavItems: Array<NavItems>;

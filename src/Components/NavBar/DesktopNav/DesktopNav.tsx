@@ -3,9 +3,13 @@ import React from "react";
 import styles from "./DesktopNav.module.scss";
 
 import { NavItemType } from "../../../Utils/enums";
-import { NavItems } from "../../../Utils/Interface";
 import NavLinks from "../NavLinks/NavLinks";
 import SocialHandles from "../../Social Handles/SocialHandles";
+
+interface NavItems {
+  name: string;
+  type: NavItemType;
+}
 
 const DesktopNav = () => {
   const NavItems: Array<NavItems> = [

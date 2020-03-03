@@ -3,8 +3,12 @@ import { FaTimes } from "react-icons/fa";
 
 import styles from "./MobileNavLinks.module.scss";
 import { NavItemType } from "../../../../Utils/enums";
-import { NavItems } from "../../../../Utils/Interface";
 import NavLinks from "../../NavLinks/NavLinks";
+
+interface NavItems {
+  name: string;
+  type: NavItemType;
+}
 
 interface MobileNavLinksProps {
   show: boolean;

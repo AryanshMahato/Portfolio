@@ -8,6 +8,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax/cjs";
 import Projects from "./Containers/Projects/Projects";
 import Background from "./Global/Background/Background";
 import ContactUs from "./Containers/Contact Us/ContactUs";
+import Footer from "./Containers/Footer/Footer";
 
 function App() {
   console.error("Please Refresh the browser while checking responsiveness");
@@ -23,6 +24,7 @@ function App() {
         <Projects />
       </Background>
       <ContactUs />
+      <Footer />
       <div className="test" />
     </ParallaxProvider>
   );

@@ -2,12 +2,12 @@
 
 .root {
   width: 100vw;
-  height: 100vh;
   background: #67e6dc;
   display: flex;
   flex-flow: column;
   align-items: center;
   padding: 1rem;
+  padding-bottom: 4rem;
 }
 
 .annotation {

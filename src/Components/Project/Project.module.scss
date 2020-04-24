@@ -1,0 +1,18 @@
+.root {
+  max-width: 500px;
+  width: 90vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 325px;
+}
+
+.image {
+  width: 100%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

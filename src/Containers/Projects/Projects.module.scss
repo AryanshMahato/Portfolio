@@ -9,11 +9,11 @@
   }
 }
 
-.annotation {
-}
-
-.description {
-}
-
 .projectsList {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  @include tab-view {
+    margin-top: 4rem;
+  }
 }

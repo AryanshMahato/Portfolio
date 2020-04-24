@@ -1,14 +1,13 @@
 @import "src/Global/SASS/variables";
 
 .root {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #67e6dc;
   display: flex;
   flex-flow: column;
   align-items: center;
   padding: 1rem;
-  padding-left: 2rem;
 }
 
 .annotation {
@@ -27,9 +26,6 @@
   @include desktop-view {
     flex-flow: row;
   }
-}
-
-.form {
 }
 
 .image {

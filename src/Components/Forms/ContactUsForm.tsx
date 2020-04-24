@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import classes from "./ContactUsForm.module.scss";
+import { FaPaperPlane } from "react-icons/all";
 
 interface ContactUsFormProps {
   formSubmitted: (e: FormEvent<HTMLFormElement>, values: any) => void;
@@ -42,7 +43,8 @@ export default ({ formSubmitted }: ContactUsFormProps) => {
         }
       />
       <button type="submit" className={classes.button}>
-        Submit
+        Send
+        <FaPaperPlane className={classes.icon} />
       </button>
     </form>
   );

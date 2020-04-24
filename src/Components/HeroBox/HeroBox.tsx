@@ -16,7 +16,7 @@ const HeroBox = () => {
         <div className={styles.title}>
           Hello, I am <span>Aryansh Mahato</span>
         </div>
-        <div className={styles.description}>Front End Web Developer</div>
+        <div className={styles.description}>Full Stack Web Developer</div>
         <ScrollPopUp didScrolled={didScrolled} />
       </div>
     </div>

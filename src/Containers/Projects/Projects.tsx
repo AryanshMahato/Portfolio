@@ -6,7 +6,7 @@ import image from "../../Assets/merch-shop.png";
 
 export default () => {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id={"projects"}>
       <Heading>PROJECTS</Heading>
       <a
         href={"https://github.com/AryanshMahato"}

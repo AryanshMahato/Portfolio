@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./ProjectLink.module.scss";
+import { FaGithubSquare } from "react-icons/fa";
 
 interface GithubLinkProps {
   githubLink: string;
@@ -13,7 +14,8 @@ export default ({ githubLink }: GithubLinkProps) => {
       target={"_blank"}
       rel="noopener noreferrer"
     >
-      GithubLink
+      <FaGithubSquare className={classes.icon} />
+      <p>Source Code</p>
     </a>
   );
 };

@@ -12,12 +12,11 @@ export default function Skills() {
     <div className={styles.Skills} id={"skills"}>
       <h1 className={styles.SkillsAnnotation}>Skills</h1>
       <div className={styles.SkillsListContainer}>
-        List
+        <SkillsList />
         <div className={styles.button}>
           <ReadMoreButton onClick={readMoreClicked} />
         </div>
       </div>
-      {/* <SkillsList /> */}
     </div>
   );
 }

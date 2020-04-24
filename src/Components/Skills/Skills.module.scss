@@ -4,7 +4,8 @@
   position: relative;
   z-index: 10;
   width: 100vw;
-  height: 80vh;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
   background-color: colors(grey);
   display: flex;
   flex-flow: column;
@@ -13,7 +14,6 @@
 
 .SkillsAnnotation {
   width: fit-content;
-  margin-top: 6rem;
   font-family: Roboto, "sans-serif";
   font-size: 4rem;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -21,14 +21,21 @@
 }
 
 .SkillsListContainer {
+  max-width: 1000px;
+  padding: 2rem;
   margin-top: 4rem;
   position: relative;
   background: colors(white);
   width: 90vw;
-  height: 250px;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.13);
   border: 1px solid black;
+  @include tab-view {
+    height: 400px;
+  }
+  @include desktop-view {
+    height: 250px;
+  }
 }
 
 .button {

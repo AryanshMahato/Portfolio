@@ -13,19 +13,22 @@
 
 .SkillsListContainer {
   max-width: 1000px;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 4rem;
   position: relative;
   background: colors(white);
   width: 90vw;
+  height: 500px;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.13);
   border: 1px solid black;
   @include tab-view {
     height: 400px;
+    padding: 2rem;
   }
   @include desktop-view {
     height: 250px;
+    padding: 2rem;
   }
 }
 

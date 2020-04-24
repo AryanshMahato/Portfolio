@@ -3,18 +3,21 @@
 .SkillsList {
   display: grid;
   height: 100%;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   max-height: 300px;
 
   @include tab-view {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 2rem;
   }
 
   @include desktop-view {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin-bottom: 0;
+    gap: 2rem;
   }
 }
 

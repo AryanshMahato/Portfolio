@@ -1,8 +1,12 @@
+@import "src/Global/SASS/variables";
+
 .root {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 5rem;
+  @include tab-view {
+    margin-top: 5rem;
+  }
 }
 
 .annotation {

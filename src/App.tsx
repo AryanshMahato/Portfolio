@@ -9,7 +9,7 @@ import Projects from "./Containers/Projects/Projects";
 import Background from "./Global/Background/Background";
 
 function App() {
-  console.log("Please Refresh the browser while checking responsiveness");
+  console.error("Please Refresh the browser while checking responsiveness");
   return (
     <ParallaxProvider>
       <Parallax y={[-30, 30]} tagOuter="figure">

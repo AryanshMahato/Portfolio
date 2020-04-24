@@ -13,7 +13,7 @@ function App() {
   console.error("Please Refresh the browser while checking responsiveness");
   return (
     <ParallaxProvider>
-      <Parallax y={[-30, 30]} tagOuter="figure">
+      <Parallax y={[-40, 40]} tagOuter="figure">
         <ParticleBackground />
         <NavBar />
         <HeroBox />

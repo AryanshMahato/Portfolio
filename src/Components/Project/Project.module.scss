@@ -7,7 +7,31 @@
   justify-content: space-between;
   height: 325px;
 }
+.imageContainer {
+  position: relative;
 
+  &:before {
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    content: "";
+    background: rgba(234, 119, 115, 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+
+      height: 100%;
+      position: absolute;
+      content: "";
+    }
+  }
+}
 .image {
   width: 100%;
 }

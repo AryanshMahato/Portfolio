@@ -13,7 +13,9 @@ interface ProjectProps {
 export default ({ project }: ProjectProps) => {
   return (
     <div className={classes.root}>
-      <img src={project.image} alt={project.name} className={classes.image} />
+      <div className={classes.imageContainer}>
+        <img src={project.image} alt={project.name} className={classes.image} />
+      </div>
       <p className={classes.name}>{project.name}</p>
     </div>
   );

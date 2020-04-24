@@ -15,11 +15,11 @@ interface NavLinksProps {
 
 const NavLinks = ({ NavItems }: NavLinksProps) => {
   const showNavLinks = () => {
-    return NavItems.map(NavItem => {
+    return NavItems.map((NavItem) => {
       if (NavItem.type === NavItemType.normal) {
         return (
           <li className={styles.navLink} key={NavItem.name}>
-            {NavItem.name}
+            <a href={`#${NavItem.name.toLocaleLowerCase()}`}>{NavItem.name}</a>
           </li>
         );
       }

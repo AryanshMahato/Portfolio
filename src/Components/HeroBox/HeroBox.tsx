@@ -11,7 +11,7 @@ const HeroBox = () => {
   }, []);
 
   return (
-    <div className={styles.herBoxContainer} onScroll={() => console.log("hi")}>
+    <div className={styles.herBoxContainer}>
       <div className={styles.herBox}>
         <div className={styles.title}>
           Hello, I am <span>Aryansh Mahato</span>

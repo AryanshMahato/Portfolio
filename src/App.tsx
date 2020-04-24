@@ -25,6 +25,7 @@ function App() {
       </Background>
       <ContactUs />
       <Footer />
+      <div className="test" />
     </ParallaxProvider>
   );
 }

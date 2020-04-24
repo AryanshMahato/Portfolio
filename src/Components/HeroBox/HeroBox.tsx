@@ -5,10 +5,15 @@ import ScrollPopUp from "../../Containers/Scroll Pop Up/ScrollPopUp";
 const HeroBox = () => {
   const [didScrolled, setScrolled] = useState(false);
 
+  let isFirstRender = true;
+
   useEffect(() => {
-    window.addEventListener("scroll", () => setScrolled(true));
+    window.addEventListener("scroll", () => {
+      if (!isFirstRender) setScrolled(true);
+      isFirstRender = false;
+    });
     return window.removeEventListener("scroll", () => setScrolled(false));
-  }, []);
+  }, [didScrolled]);
 
   return (
     <div className={styles.herBoxContainer}>

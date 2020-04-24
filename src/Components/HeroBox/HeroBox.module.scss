@@ -19,6 +19,7 @@
   color: colors(white);
   @include tab-view {
     align-items: center;
+    margin-left: 0;
   }
   @include desktop-view {
     height: 60vh;

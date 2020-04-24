@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./NavBar.module.scss";
 
@@ -8,6 +8,16 @@ import MobileNavLinks from "./MobileNav/MobileNavLinks/MobileNavLinks";
 
 const NavBar = () => {
   const [showMobileNav, setMobileNav] = useState(false);
+
+  useEffect(() => {
+    if (showMobileNav) {
+      // @ts-ignore
+      document.querySelector("body").style.overflow = "hidden";
+    } else {
+      // @ts-ignore
+      document.querySelector("body").style.overflowY = "scroll";
+    }
+  }, [showMobileNav]);
 
   return (
     <div className={styles.NavBar}>

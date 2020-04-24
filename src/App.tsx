@@ -6,6 +6,7 @@ import ParticleBackground from "./Components/Particle Background/ParticleBackgro
 import Skills from "./Components/Skills/Skills";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax/cjs";
 import Projects from "./Containers/Projects/Projects";
+import Background from "./Global/Background/Background";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <NavBar />
         <HeroBox />
       </Parallax>
-      <Skills />
-      <Projects />
+      <Background>
+        <Skills />
+        <Projects />
+      </Background>
       <div className="test" />
     </ParallaxProvider>
   );

@@ -4,12 +4,12 @@
   display: flex;
   flex-flow: column;
   padding: 1rem;
-  min-width: 90vw;
+  width: 90vw;
   @include tab-view {
-    min-width: 550px;
+    width: 550px;
   }
   @include desktop-view {
-    min-width: 650px;
+    width: 650px;
   }
 }
 

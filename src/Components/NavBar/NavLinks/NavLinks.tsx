@@ -1,8 +1,9 @@
 import React from "react";
-
 import styles from "./NavLinks.module.scss";
-
 import { NavItemType } from "../../../Utils/enums";
+// @ts-ignore
+import AnchorLink from "react-anchor-link-smooth-scroll";
+// Typed Version is not available
 
 interface NavItems {
   name: string;
@@ -19,7 +20,9 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
       if (NavItem.type === NavItemType.normal) {
         return (
           <li className={styles.navLink} key={NavItem.name}>
-            <a href={`#${NavItem.name.toLocaleLowerCase()}`}>{NavItem.name}</a>
+            <AnchorLink href={`#${NavItem.name.toLocaleLowerCase()}`}>
+              {NavItem.name}
+            </AnchorLink>
           </li>
         );
       }

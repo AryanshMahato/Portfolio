@@ -6,7 +6,13 @@ interface BackgroundProps {
 
 export default ({ children }: BackgroundProps) => {
   return (
-    <div style={{ background: "#dae0e2", position: "relative" }}>
+    <div
+      style={{
+        background: "#dae0e2",
+        position: "relative",
+        paddingBottom: "5rem",
+      }}
+    >
       {children}
     </div>
   );

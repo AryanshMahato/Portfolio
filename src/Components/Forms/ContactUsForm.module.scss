@@ -1,0 +1,41 @@
+@import "src/Global/SASS/variables";
+
+.root {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  min-width: 90vw;
+  @include tab-view {
+    min-width: 550px;
+  }
+  @include desktop-view {
+    min-width: 650px;
+  }
+}
+
+.input {
+  height: 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 1rem;
+  outline: none;
+  border: 1px solid #747474;
+}
+
+.textArea {
+  height: 10rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: 1px solid #747474;
+}
+
+.button {
+  margin: 1rem;
+}

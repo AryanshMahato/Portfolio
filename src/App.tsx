@@ -5,6 +5,7 @@ import HeroBox from "./Components/HeroBox/HeroBox";
 import ParticleBackground from "./Components/Particle Background/ParticleBackground";
 import Skills from "./Components/Skills/Skills";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax/cjs";
+import Projects from "./Containers/Projects/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <HeroBox />
       </Parallax>
       <Skills />
+      <Projects />
       <div className="test" />
     </ParallaxProvider>
   );

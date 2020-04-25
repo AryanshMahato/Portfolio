@@ -9,6 +9,7 @@ import Projects from "./Containers/Projects/Projects";
 import Background from "./Global/Background/Background";
 import ContactUs from "./Containers/Contact Us/ContactUs";
 import Footer from "./Containers/Footer/Footer";
+import About from "./Containers/About/About";
 
 function App() {
   console.error("Please Refresh the browser while checking responsiveness");
@@ -20,6 +21,7 @@ function App() {
         <HeroBox />
       </Parallax>
       <Background>
+        <About />
         <Skills />
         <Projects />
       </Background>

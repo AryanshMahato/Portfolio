@@ -4,17 +4,13 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 90vh;
   justify-content: space-around;
-  @include tab-view {
-    height: 100vh;
-  }
 }
 
 .annotation {
-  margin-top: 3rem;
-  @include desktop-view {
-    margin-top: 5rem;
+  margin: 3rem 0;
+  @include tab-view {
+    margin: 5rem;
   }
 }
 

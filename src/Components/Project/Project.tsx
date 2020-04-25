@@ -33,6 +33,7 @@ export default ({ project }: ProjectProps) => {
         className={classes.imageContainer}
         onMouseEnter={hoverStarted}
         onMouseLeave={hoverEnded}
+        onClick={hoverStarted}
       >
         <img src={project.image} alt={project.name} className={classes.image} />
         <div className={buttonClass}>

@@ -27,15 +27,13 @@ export default () => {
         templateParams,
         process.env.REACT_APP_USER_ID!
       )
-      .then((e) => {
+      .then(() => {
         setResetForm(true);
         setShowSpinner(false);
-        console.log(e);
       })
-      .catch((e) => {
+      .catch(() => {
         setResetForm(true);
         setShowSpinner(false);
-        console.error(e);
       });
   };
 

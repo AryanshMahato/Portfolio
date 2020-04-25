@@ -13,7 +13,6 @@ export default ({ formSubmitted, resetForm }: ContactUsFormProps) => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    console.log(resetForm);
     if (resetForm) {
       setName("");
       setEmail("");

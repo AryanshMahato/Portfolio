@@ -27,10 +27,14 @@ export default ({ project }: ProjectProps) => {
     ? classes.buttons + " " + classes.show
     : classes.buttons;
 
+  let imageClass = showLinks
+    ? classes.imageContainer + " " + classes.showImageBackground
+    : classes.imageContainer;
+
   return (
     <div className={classes.root}>
       <div
-        className={classes.imageContainer}
+        className={imageClass}
         onMouseEnter={hoverStarted}
         onMouseLeave={hoverEnded}
         onClick={hoverStarted}

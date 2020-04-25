@@ -3,7 +3,7 @@
 .mobileNav {
   position: absolute;
   right: 1rem;
-  top: 3rem;
+  top: 2.5rem;
   @include desktop-view {
     display: none;
   }

@@ -36,7 +36,9 @@ export default ({ formSubmitted }: ContactUsFormProps) => {
       />
       <textarea
         name="message"
-        placeholder={"Message"}
+        placeholder={
+          "Hey Aryansh! I had a look at your Portfolio. Let's have a chat!"
+        }
         className={classes.textArea}
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
           setMessage(e.target.value)

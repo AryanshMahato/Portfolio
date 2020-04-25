@@ -1,4 +1,4 @@
-import React, { FormEvent } from "react";
+import React, { FormEvent, useState } from "react";
 import classes from "./ContactUs.module.scss";
 import Undraw from "../../Assets/Undraw.svg";
 import ContactUsForm from "../../Components/Forms/ContactUsForm";
@@ -6,6 +6,9 @@ import Heading from "../../Global/Heading/Heading";
 import * as emailjs from "emailjs-com";
 
 export default () => {
+  const [showSpinner, setShowSpinner] = useState(false);
+  const [resetForm, setResetForm] = useState(false);
+
   const formSubmitHandler = (e: FormEvent<HTMLFormElement>, values: any) => {
     e.preventDefault();
     let templateParams = {
@@ -15,11 +18,7 @@ export default () => {
       message_html: values.message,
     };
 
-    console.log(
-      process.env.REACT_APP_TEMPLATE_ID,
-      process.env.REACT_APP_USER_ID
-    );
-
+    setShowSpinner(true);
     emailjs
       .send(
         "gmail",
@@ -27,15 +26,26 @@ export default () => {
         templateParams,
         process.env.REACT_APP_USER_ID!
       )
-      .then((e) => console.log(e))
-      .catch((e) => console.error(e));
+      .then((e) => {
+        setResetForm(true);
+        setShowSpinner(false);
+        console.log(e);
+      })
+      .catch((e) => {
+        setResetForm(true);
+        setShowSpinner(false);
+        console.error(e);
+      });
   };
 
   return (
     <div className={classes.root} id={"hello"}>
       <Heading className={classes.annotation}>Let's Have a Chat</Heading>
       <div className={classes.main}>
-        <ContactUsForm formSubmitted={formSubmitHandler} />
+        <ContactUsForm
+          formSubmitted={formSubmitHandler}
+          resetForm={resetForm}
+        />
         <img src={Undraw} alt="" className={classes.image} />
       </div>
     </div>

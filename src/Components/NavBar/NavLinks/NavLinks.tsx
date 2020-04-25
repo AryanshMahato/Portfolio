@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./NavLinks.module.scss";
 import { NavItemType } from "../../../Utils/enums";
-// @ts-ignore
-import AnchorLink from "react-anchor-link-smooth-scroll";
-// Typed Version is not available
 
 interface NavItems {
   name: string;
@@ -21,9 +18,9 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
         return (
           <li className={styles.navLink} key={NavItem.name}>
             {NavItem.name.toLocaleLowerCase() !== "resume" ? (
-              <AnchorLink href={`#${NavItem.name.toLocaleLowerCase()}`}>
+              <a href={`#${NavItem.name.toLocaleLowerCase()}`}>
                 {NavItem.name}
-              </AnchorLink>
+              </a>
             ) : (
               <a
                 href="https://drive.google.com/open?id=1vBnC29jioC84eB98ab5qHvwsr45FazZm"
@@ -37,9 +34,9 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
         );
       }
       return (
-        <AnchorLink href={"#hello"} className={styles.cta} key={NavItem.name}>
+        <a href={"#hello"} className={styles.cta} key={NavItem.name}>
           {NavItem.name}
-        </AnchorLink>
+        </a>
       );
     });
   };

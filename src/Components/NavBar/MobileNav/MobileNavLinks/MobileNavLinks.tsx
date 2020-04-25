@@ -20,7 +20,7 @@ const MobileNavLinks = ({ show, closeButtonClicked }: MobileNavLinksProps) => {
     { name: "Skills", type: NavItemType.normal },
     { name: "Projects", type: NavItemType.normal },
     { name: "Resume", type: NavItemType.normal },
-    { name: "Say Hello", type: NavItemType.cta }
+    { name: "Say Hello", type: NavItemType.cta },
   ];
 
   const classes = () => {

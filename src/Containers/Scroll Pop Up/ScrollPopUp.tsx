@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import styles from "./ScrollPopUp.module.scss";
-// @ts-ignore
-import AnchorLink from "react-anchor-link-smooth-scroll";
-//Typed Version is not available
 
 // Prop Types
 interface ScrollPopUpProps {
@@ -28,11 +25,11 @@ const ScrollPopUp = ({ didScrolled }: ScrollPopUpProps) => {
   }
 
   return (
-    <AnchorLink href="#about">
+    <a href="#about">
       <div className={classes.join(" ")}>
         Scroll <FaChevronDown />
       </div>
-    </AnchorLink>
+    </a>
   );
 };
 

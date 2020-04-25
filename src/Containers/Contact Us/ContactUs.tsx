@@ -4,6 +4,7 @@ import Undraw from "../../Assets/Undraw.svg";
 import ContactUsForm from "../../Components/Forms/ContactUsForm";
 import Heading from "../../Global/Heading/Heading";
 import * as emailjs from "emailjs-com";
+import Spinner from "../../Global/Spinner/Spinner";
 
 export default () => {
   const [showSpinner, setShowSpinner] = useState(false);
@@ -40,6 +41,7 @@ export default () => {
 
   return (
     <div className={classes.root} id={"hello"}>
+      {showSpinner ? <Spinner /> : null}
       <Heading className={classes.annotation}>Let's Have a Chat</Heading>
       <div className={classes.main}>
         <ContactUsForm

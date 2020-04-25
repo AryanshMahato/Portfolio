@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Backdrop.module.scss";
 
 interface BackdropProps {
-  clicked: () => void;
+  clicked?: () => void;
 }
 
 const Backdrop = ({ clicked }: BackdropProps) => {

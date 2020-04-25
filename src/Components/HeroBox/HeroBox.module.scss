@@ -1,6 +1,7 @@
 @import "src/Global/SASS/variables";
 
 .herBoxContainer {
+  position: relative;
   height: 100vh;
   @include desktop-view {
     // Subtracts NavBar height to get full Viewport Height

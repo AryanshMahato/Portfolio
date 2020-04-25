@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  max-height: 300px;
 
   @include tab-view {
     grid-template-columns: repeat(3, minmax(100px, 1fr));

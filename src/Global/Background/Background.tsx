@@ -11,7 +11,7 @@ export default ({ children }: BackgroundProps) => {
         background: "#dae0e2",
         position: "relative",
         paddingBottom: "5rem",
-        width: "100vw",
+        width: "100%",
       }}
     >
       {children}

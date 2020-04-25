@@ -1,7 +1,7 @@
 @import "src/Global/SASS/variables";
 
 .root {
-  width: 100vw;
+  width: 100%;
   background: #67e6dc;
   display: flex;
   flex-flow: column;
@@ -13,11 +13,16 @@
 .annotation {
   margin: 4rem 0;
   text-transform: none;
+  font-size: 2rem;
+  text-align: center;
+  @include tab-view {
+    font-size: 3rem;
+  }
 }
 
 .main {
   background: white;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;

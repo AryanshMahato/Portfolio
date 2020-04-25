@@ -28,7 +28,7 @@ const ScrollPopUp = ({ didScrolled }: ScrollPopUpProps) => {
   }
 
   return (
-    <AnchorLink href="#skills">
+    <AnchorLink href="#about">
       <div className={classes.join(" ")}>
         Scroll <FaChevronDown />
       </div>

@@ -25,7 +25,11 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
                 {NavItem.name}
               </AnchorLink>
             ) : (
-              <a href={`#${NavItem.name.toLocaleLowerCase()}`}>
+              <a
+                href="https://www.linkedin.com/in/aryansh-mahato-a4b33015a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {NavItem.name}
               </a>
             )}

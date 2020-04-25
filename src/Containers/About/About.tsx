@@ -4,7 +4,7 @@ import Heading from "../../Global/Heading/Heading";
 
 export default () => {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id={"about"}>
       <Heading className={classes.annotation}>About Me</Heading>
       <div className={classes.aboutSection}>
         <p className={classes.about}>

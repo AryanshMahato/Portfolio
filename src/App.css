@@ -14,6 +14,6 @@ a {
   text-decoration: none;
 }
 
-.parallax-inner {
-  transform: translate3d(0%, 0%, 0px);
+#root {
+  position: relative;
 }

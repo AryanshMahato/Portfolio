@@ -32,7 +32,7 @@ const MobileNavLinks = ({ show, closeButtonClicked }: MobileNavLinksProps) => {
 
   return (
     <div className={classes()}>
-      <ul className={styles.navLinks}>
+      <ul className={styles.navLinks} onClick={closeButtonClicked}>
         <NavLinks NavItems={NavItems} />
       </ul>
       <div className={styles.closeButton} onClick={closeButtonClicked}>

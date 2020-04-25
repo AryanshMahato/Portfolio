@@ -1,7 +1,7 @@
 @import "src/Global/SASS/variables";
 
 .mobileNavLinks {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   top: 0;
@@ -38,4 +38,5 @@
 
 .show {
   transform: translateX(0);
+  transition: 0.2s;
 }

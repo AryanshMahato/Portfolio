@@ -57,12 +57,13 @@
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  opacity: 0;
+  transform: scale(0);
   transition: 0.2s;
   pointer-events: none;
 }
 
 .show {
-  opacity: 100% !important;
+  transform: scale(1);
+
   pointer-events: all;
 }

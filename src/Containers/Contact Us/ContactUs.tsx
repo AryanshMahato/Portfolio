@@ -11,7 +11,7 @@ export default () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id={"hello"}>
       <Heading className={classes.annotation}>Let's Have a Chat</Heading>
       <div className={classes.main}>
         <ContactUsForm formSubmitted={formSubmitHandler} />

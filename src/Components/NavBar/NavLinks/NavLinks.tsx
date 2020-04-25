@@ -20,16 +20,22 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
       if (NavItem.type === NavItemType.normal) {
         return (
           <li className={styles.navLink} key={NavItem.name}>
-            <AnchorLink href={`#${NavItem.name.toLocaleLowerCase()}`}>
-              {NavItem.name}
-            </AnchorLink>
+            {NavItem.name.toLocaleLowerCase() !== "resume" ? (
+              <AnchorLink href={`#${NavItem.name.toLocaleLowerCase()}`}>
+                {NavItem.name}
+              </AnchorLink>
+            ) : (
+              <a href={`#${NavItem.name.toLocaleLowerCase()}`}>
+                {NavItem.name}
+              </a>
+            )}
           </li>
         );
       }
       return (
-        <li className={styles.cta} key={NavItem.name}>
+        <AnchorLink href={"#hello"} className={styles.cta} key={NavItem.name}>
           {NavItem.name}
-        </li>
+        </AnchorLink>
       );
     });
   };

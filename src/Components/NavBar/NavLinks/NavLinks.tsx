@@ -26,7 +26,7 @@ const NavLinks = ({ NavItems }: NavLinksProps) => {
               </AnchorLink>
             ) : (
               <a
-                href="https://www.linkedin.com/in/aryansh-mahato-a4b33015a/"
+                href="https://drive.google.com/open?id=1vBnC29jioC84eB98ab5qHvwsr45FazZm"
                 target="_blank"
                 rel="noopener noreferrer"
               >

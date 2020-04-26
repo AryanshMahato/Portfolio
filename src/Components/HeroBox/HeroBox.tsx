@@ -18,11 +18,12 @@ const HeroBox = () => {
   }, [didScrolled]);
 
   window.addEventListener("scroll", () => {
-    if (i * 5 < 200) {
+    const factor = 2;
+    if (i * factor < 200) {
       if (lastOffset < window.pageYOffset)
         // @ts-ignore
         document.getElementById("heroBox").style.transform = `translateY(${
-          ++i * 5
+          ++i * factor
         }px)`;
     }
 
@@ -30,7 +31,7 @@ const HeroBox = () => {
       if (i > 0) {
         // @ts-ignore
         document.getElementById("heroBox").style.transform = `translateY(${
-          --i * 5
+          --i * factor
         }px)`;
       }
       if (window.pageYOffset === 0) {

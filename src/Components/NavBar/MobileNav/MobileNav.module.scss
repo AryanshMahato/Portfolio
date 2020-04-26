@@ -2,6 +2,7 @@
 
 .mobileNav {
   position: absolute;
+  z-index: 100;
   right: 1rem;
   top: 2.5rem;
   @include desktop-view {
